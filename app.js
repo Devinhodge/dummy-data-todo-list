@@ -24,26 +24,20 @@ listItem = document.createElement("li");
 
 const fetchTodos = () => {
   fetch('https://jsonplaceholder.typicode.com/todos')
-  .then((response) => response.json())
-  .then((json) => arrayOfTodos = json)
-  .then(json => console.log(json))
-    if (this.response === this.DONE && this.status === 200) {
-    if (this.responseText) { 
-        listItem.innerHTML = this.responseText;
-        fetchTodos(this.responseText);
-    }
-    else {
-        console.log("Error: Data is empty");
-    }
+  .then( (response) => response.json())
+  .then( (json) => arrayOfTodos = json)
+      console.log('fetchTodos', fetchTodos)
 }
   console.log('orderedListElement', orderedListElement)
 
-}
 
 const logTodos = () => {
   console.log(arrayOfTodos)
+
 }
 
 const populateTodos = () => {
-
+  
+  document.getElementById("todo-list").innerHTML = arrayOfTodos;
+  
 }
