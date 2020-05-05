@@ -4,11 +4,9 @@ const fetchTodos = () => {
     .then((json) => arrayOfTodos = json)
       console.log('fetchTodos', fetchTodos)
 };
-
 const logTodos = () => {
   console.log(arrayOfTodos)
 };
-
 const populateTodos = () => {
   var ol = document.getElementById("todo-list");
   ol.innerHTML = ``;

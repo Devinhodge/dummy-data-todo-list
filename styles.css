@@ -1,0 +1,32 @@
+body {
+  height: 100%;
+  width: auto;
+}
+button {
+  height: 40px;
+  font-size: 30px;
+  margin: 20px 0 20px 5%;
+  border: none;
+  border-radius: 25px;
+  width: 250px;
+  text-align: center;
+}
+#fetch {
+  background-color: rgba(21, 73, 20, 0.719);
+}
+#log {
+  background-color: rgba(175, 136, 6, 0.719);
+}
+#pop {
+  background-color: rgba(151, 53, 41, 0.719);
+}
+ol {
+  margin-left:28%;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+
+
