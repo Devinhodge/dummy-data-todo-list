@@ -1,14 +1,15 @@
+
+
+
 const fetchTodos = () => {
   fetch("https://jsonplaceholder.typicode.com/todos")
     .then((response) => response.json())
-    .then((json) => {
-      arrayOfTodos = json;
+    .then((json) => arrayOfTodos = json)
       console.log('fetchTodos', fetchTodos)
-    });
 };
 
 const logTodos = () => {
-  console.log(arrayOfTodos);
+  console.log(arrayOfTodos)
 };
 
 const populateTodos = () => {
